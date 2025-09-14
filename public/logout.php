@@ -1,0 +1,1 @@
+<?php require __DIR__.'/../src/bootstrap.php'; session_destroy(); header('Location: /index.php');
