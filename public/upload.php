@@ -27,5 +27,5 @@ try {
   Quota::addUsage($pdo, (int)$user['id'], $size);
   header('Location: /files.php'); exit;
 } catch (\Throwable $e) {
-  echo "Erro: ".$e->getMessage()." — Talvez seja necessário <a href='/auth/google/login.php'>conectar ao Google</a>.";
+  echo "Erro: ".$e->getMessage().". Talvez seja necessário <a href='/auth/google/login.php'>conectar ao Google</a>.";
 }

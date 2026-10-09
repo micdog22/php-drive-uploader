@@ -14,7 +14,7 @@ Sistema multiusuário com autenticação, papéis (admin/usuário), cotas, e upl
 - PHP 8.1+ com extensões comuns (pdo_mysql, openssl, mbstring, json, curl).
 - MySQL/MariaDB.
 - Composer.
-- Credenciais do Google Cloud (OAuth Client ID – tipo Web) com Drive API habilitada.
+- Credenciais do Google Cloud (OAuth Client ID, tipo Web) com Drive API habilitada.
 
 ## Setup (5 passos)
 1. **Clonar ou copiar** este projeto.
@@ -95,7 +95,7 @@ GOOGLE_REDIRECT_URI=http://localhost:8080/auth/google/callback.php
 GOOGLE_SCOPES="https://www.googleapis.com/auth/drive.file"
 ```
 
-## Google Drive — permissões
+## Google Drive: permissões
 - **Drive API** habilitada no Console.
 - **Scopes**: usamos `drive.file` para permitir o app criar/gerenciar arquivos/pastas que ele mesmo criar.
 
@@ -110,4 +110,4 @@ GOOGLE_SCOPES="https://www.googleapis.com/auth/drive.file"
 - Resetar *OAuth consent* (apagar token do usuário): delete `storage/google/tokens/{id}.json`.
 
 ## Licença
-MIT — veja `LICENSE`.
+MIT. Veja [LICENSE](LICENSE).
